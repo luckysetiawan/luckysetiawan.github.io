@@ -1,0 +1,17 @@
+*{
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    text-align: center;
+    border: 1px dashed green;
+}
+
+nav{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
