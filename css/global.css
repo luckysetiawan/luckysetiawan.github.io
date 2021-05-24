@@ -61,7 +61,7 @@ nav .menu li a:hover {
     background-attachment: fixed;
     height: 100vh;
     color: honeydew;
-    min-width: 500px;
+    min-width: 360px;
 }
 
 .home .max-width {
@@ -90,7 +90,7 @@ nav .menu li a:hover {
     background-attachment: fixed;
     height: 100vh;
     color: honeydew;
-    min-width: 500px;
+    min-width: 360px;
 }
 
 .about .max-width {
@@ -110,7 +110,7 @@ nav .menu li a:hover {
     background-attachment: fixed;
     height: 100vh;
     color: honeydew;
-    min-width: 500px;
+    min-width: 360px;
 }
 
 .contact .max-width {
@@ -229,7 +229,7 @@ footer span a:hover {
     }
     
     .home .home-content .text-2 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 600;
         margin-left: -3px;
     }
@@ -245,10 +245,10 @@ footer span a:hover {
 
     .contact .contact-content h2 {
         text-align: right;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .contact .contact-content td {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
