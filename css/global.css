@@ -221,7 +221,7 @@ footer span a:hover {
     }
 
     .max-width {
-        padding: 0 30px;
+        padding: 0 25px;
     }
 
     .home .home-content .text-1 {
@@ -238,6 +238,10 @@ footer span a:hover {
         font-size: 20px;
     }
 
+    .about {
+        height: 150vh;
+    }
+
     .about .about-content p {
         text-align: justify;
         font-size: 20px;
@@ -249,6 +253,6 @@ footer span a:hover {
     }
 
     .contact .contact-content td {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
