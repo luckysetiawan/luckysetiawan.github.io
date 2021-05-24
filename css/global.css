@@ -1,44 +1,254 @@
-*{
-    background-color: #121212;
-    color: #f5f5f5;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-body{
-    margin: 2% 10%;
-}
-
-header{
-    text-align: center;
-    border: 1px dashed green;
-}
-
-nav{
-    text-align: center;
-}
-
-nav a{
-    padding: 0.5%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
-nav a:link{
-    color : lightblue;
+.max-width {
+    max-width: 1300px;
+    padding: 0 75px;
+    margin: auto;
 }
 
-nav a:visited{
-    color : cadetblue;
+/* navbar css */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover{
-    color : red;
-    border: 1px solid gray;
+.sticky {
+    padding: 15px 0px;
+    background-color: #1e1e1e;
 }
 
-nav a:active{
-    color : red;
+nav .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-p{
+nav .logo a {
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav .menu li a {
+    color: lightblue;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+    color: red;
+}
+
+/* home css */
+.home {
+    display: flex;
+    background-color: #121212;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: honeydew;
+    min-width: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 25px;
+}
+
+.home .home-content .text-2 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+}
+
+/* about css */
+.about {
+    display: flex;
+    background-color: #1e1e1e;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: honeydew;
+    min-width: 500px;
+}
+
+.about .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.about .about-content p {
     text-align: justify;
+    font-size: 25px;
+}
+
+/* contact css */
+.contact {
+    display: flex;
+    background-color: #121212;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: honeydew;
+    min-width: 500px;
+}
+
+.contact .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.contact .contact-content h2 {
+    text-align: right;
+    font-size: 60px;
+}
+
+.contact .contact-content td {
+    font-size: 30px;
+}
+
+.contact .contact-content td a {
+    color: lightblue;
+    margin-left: 35px;
+    transition: color 0.3s ease;
+}
+
+.contact .contact-content td a:hover {
+    color: red;
+}
+
+/* footer css */
+footer {
+    background-color: #1e1e1e;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+footer span a {
+    color: lightblue;
+}
+
+footer span a:hover {
+    color: red;
+}
+
+/* adjustment for different devices */
+@media (max-width: 850px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+    
+    .home .home-content .text-2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 30px;
+    }
+
+    .contact .contact-content h2 {
+        text-align: right;
+        font-size: 50px;
+    }
+
+    .contact .contact-content td {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        visibility: hidden;
+    }
+
+    .max-width {
+        padding: 0 40px;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 15px;
+    }
+    
+    .home .home-content .text-2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 25px;
+    }
+
+    .contact .contact-content h2 {
+        text-align: right;
+        font-size: 40px;
+    }
+
+    .contact .contact-content td {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu {
+        visibility: hidden;
+    }
+
+    .max-width {
+        padding: 0 30px;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+    
+    .home .home-content .text-2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    .about .about-content p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .contact .contact-content h2 {
+        text-align: right;
+        font-size: 40px;
+    }
+
+    .contact .contact-content td {
+        font-size: 30px;
+    }
 }
