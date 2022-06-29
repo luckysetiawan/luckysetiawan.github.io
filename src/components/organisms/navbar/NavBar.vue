@@ -1,11 +1,11 @@
 <template>
     <header class="py-6">
         <div class="container flex justify-between items-center mx-auto px-8 w-full">
-            <a class="text-lg inline-block p-[8px]" href="/">luckysetiawan.github.io</a>
+            <RouterLink class="text-lg inline-block p-[8px]" to="/">luckysetiawan.github.io</RouterLink>
             <nav class="flex space-x-12 items-center m2">
-                <a class="inline-block p-[8px]" href="/">Home </a>
-                <a class="inline-block p-[8px]" href="/about">About</a>
-                <a class="inline-block p-[8px]" href="/contact">Contact</a>
+                <RouterLink class="inline-block p-[8px]" to="/">Home </RouterLink>
+                <RouterLink class="inline-block p-[8px]" to="/about">About</RouterLink>
+                <RouterLink class="inline-block p-[8px]" to="/contact">Contact</RouterLink>
             </nav>
         </div>
     </header>
