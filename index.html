@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Lucky's Personal Website" />
-    <meta name="keywords" content="Lucky Setiawan, Lucky, Setiawan" />
-    <meta name="author" content="Lucky Setiawan" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome To Lucky Setiawan's Website</title>
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body class="bg-body text-white pb-12 overflow-y-hidden">
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Lucky Setiawan's Personal Website">
+        <meta name="keywords" content="Lucky Setiawan, Lucky, Setiawan, Software Engineer, Software Developer, Programmer">
+        <meta name="author" content="Lucky Setiawan">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Lucky Setiawan's Website</title>
+        <link rel="stylesheet" href="css/global.css">
+        <script src="js/navbar.js" defer></script>
+    </head>
+
+    <body style="background-color:#383c3c">
+        <header class="primary-header flex">
+            <a class="logo-text text-white flex" href="index.html">
+                luckysetiawan.github.io
+            </a>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <!-- TODO: Add the sr-only class -->
+                <span class="sr-only"> Menu</span>
+            </button>
+
+            <nav>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li class="active">
+                        <a class="text-white" href="index.html">
+                            <span aria-hidden="true">01</span>Home
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a class="text-white" href="#">
+                                <span aria-hidden="true">02</span>About
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a class="text-white" href="#">
+                                <span aria-hidden="true">03</span>Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 </html>
