@@ -121,5 +121,6 @@
 
 /* Body CSS */
 body {
+    background-color:#383c3c;
     overflow-x: hidden;
 }
