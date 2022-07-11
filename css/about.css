@@ -7,15 +7,15 @@
 
 @media (max-width: 35em) {
     .about-text h1 {
-        font-size: 2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        font-size: 1.8rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 
     .about-text p {
-        font-size: 1.15rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
+        font-size: 1.1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
     }
 }
 
