@@ -4,7 +4,7 @@
     font-size: 1rem;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 45em) {
     .hero-text h1 {
         font-size: 2rem;
         padding-top: 0.5rem;
@@ -18,7 +18,7 @@
     }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 45em) and (max-width: 55em) {
     .hero-text h1 {
         font-size: 2.5rem;
         padding-top: 0.25rem;

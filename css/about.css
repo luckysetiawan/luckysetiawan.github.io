@@ -5,7 +5,7 @@
     text-align: justify;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 45em) {
     .about-text h1 {
         font-size: 1.8rem;
         padding-top: 0.25rem;
@@ -19,7 +19,7 @@
     }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 45em) and (max-width: 55em) {
     .about-text h1 {
         font-size: 1.75rem;
         padding-top: 0.2rem;
@@ -41,7 +41,7 @@
     }
 
     .about-text p {
-        font-size: 1.59rem;
+        font-size: 1.5rem;
         padding-top: 0rem;
         padding-bottom: 0rem;
     }

@@ -27,8 +27,18 @@ class NavBar extends HTMLElement {
                             </a>
                         </li>
                         <li class="active">
-                            <a class="text-white" href="contact-me.html">
-                                    <span aria-hidden="true">03</span>Contact Me
+                            <a class="text-white" href="portofolios.html">
+                                    <span aria-hidden="true">03</span>Portofolios
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="text-white" href="tools.html">
+                                    <span aria-hidden="true">04</span>Tools
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a class="text-white" href="contact.html">
+                                    <span aria-hidden="true">05</span>Contact
                             </a>
                         </li>
                     </ul>

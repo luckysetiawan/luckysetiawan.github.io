@@ -77,7 +77,7 @@
     margin-inline-end: 0.75em;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 45em) {
     .primary-navigation {
         --gap: 2em;
 
@@ -116,13 +116,13 @@
     }
 }
 
-@media (min-width: 35em) and (max-width: 55em) {
+@media (min-width: 45em) and (max-width: 55em) {
     .primary-navigation a > span[aria-hidden] {
         display: none;
     }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 45em) {
     .primary-navigation {
         --gap: clamp(1.5rem, 5vw, 3rem);
         background: hsl(180 3.4% 22.7%);
