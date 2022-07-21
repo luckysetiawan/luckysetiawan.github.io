@@ -9,4 +9,4 @@ You can visit my website by clicking the link below
 
 ### Assets and Icons Used :
 * [Google Fonts](https://fonts.google.com/icons)
-* [Shields IO](https://shields.io/)
+* [Font Awesome](https://fontawesome.com/)
