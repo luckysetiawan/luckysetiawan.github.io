@@ -1,0 +1,26 @@
+:root {
+    --c1: #8900ff;
+    --c2: #6f00ff;
+    --c3: #0092ff;
+    --c4: #00c5ff;
+    --c5: #00f9ff;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
