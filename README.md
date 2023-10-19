@@ -10,3 +10,4 @@ This is my personal website. You can visit my website by clicking the link below
 * [Google Fonts](https://fonts.google.com/)
 * [Shields.io](https://shields.io/badges)
 * [Font Awesome](https://fontawesome.com/)
+* [particles.js](https://vincentgarreau.com/particles.js/)
