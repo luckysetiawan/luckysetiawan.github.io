@@ -1,9 +1,63 @@
 const isMobile = () => {
-    console.log(`Height ${window.innerHeight}`);
-    console.log(`Width ${window.innerWidth}`);
-    console.log(`H > W ${window.innerHeight > window.innerWidth}`);
     return window.innerHeight > window.innerWidth;
 };
+
+class NavigationComponent extends HTMLElement {
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
+        let navigation = ``;
+
+        if (!isMobile()) {
+            navigation = `
+                <div class="navigation-component">
+                    <div class="toggle-component"></div>
+                    <ul class="ul-component">
+                        <li class="li-component">
+                            <a class="a-component" href="#/0">
+                                <span class="icon-component"><i class="fa fa-home" aria-hidden="true"></i>
+                                </span>
+                                <span class="title-component">Home</span>
+                            </a>
+                        </li>
+                        <li class="li-component">
+                            <a class="a-component" href="#/1">
+                                <span class="icon-component"><i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                                <span class="title-component">About Me</span>
+                            </a>
+                        </li>
+                        <li class="li-component">
+                            <a class="a-component" href="#/2">
+                                <span class="icon-component"><i class="fa fa-book" aria-hidden="true"></i>
+                                </span>
+                                <span class="title-component">Portofolios</span>
+                            </a>
+                        </li>
+                        <li class="li-component">
+                            <a class="a-component" href="#/3">
+                                <span class="icon-component"><i class="fa fa-wrench" aria-hidden="true"></i>
+                                </span>
+                                <span class="title-component">Tools</span>
+                            </a>
+                        </li>
+                        <li class="li-component">
+                            <a class="a-component" href="#/4">
+                                <span class="icon-component"><i class="fa fa-address-book" aria-hidden="true"></i>
+                                </span>
+                                <span class="title-component">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            `;
+        }
+
+        this.innerHTML = navigation;
+    }
+}
 
 class ContactComponent extends HTMLElement {
     constructor() {
@@ -37,4 +91,5 @@ class ContactComponent extends HTMLElement {
     }
 }
 
-customElements.define('contact-componnent', ContactComponent)
+customElements.define('navigation-component', NavigationComponent);
+customElements.define('contact-component', ContactComponent);

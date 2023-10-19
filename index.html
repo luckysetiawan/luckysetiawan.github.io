@@ -10,14 +10,25 @@
 		<title>Lucky's Website</title>
 
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/component.css">
 		<link rel="stylesheet" href="css/text-animate.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/lucky.css">
+
 		<script src="js/component.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script>
+			$(() => {
+				$( ".navigation-component" ).draggable();
+			});
+		</script>
 	</head>
 	<body>
 		<div class="reveal">
+			<navigation-component></navigation-component>
 			<div class="slides">
 				<!-- 1st slide -->
 				<section>
@@ -93,7 +104,7 @@
 				<section>
 					<h1><span class="rainbow_text_animated">Contact</span></h1>
 					
-					<contact-componnent>
+					<contact-component></contact-component>
 				</section>
 			</div>
 		</div>
@@ -113,6 +124,14 @@
 				
 				plugins: []
 			});
+
+			const navigationComponent = document.querySelector('.navigation-component');
+			const toggleComponent = document.querySelector('.toggle-component');
+
+			toggleComponent.ondblclick = function() {
+				toggleComponent.classList.toggle('active');
+				navigationComponent.classList.toggle('active');
+			};
 		</script>
 	</body>
 </html>

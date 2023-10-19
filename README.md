@@ -9,3 +9,6 @@ This is my personal website. You can visit my website by clicking the link below
 * [reveal.js](https://revealjs.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [Shields.io](https://shields.io/badges)
+* [jQuery](https://jquery.com/)
+* [jQuery UI](https://jqueryui.com/)
+* [Font Awesome](https://fontawesome.com/)
