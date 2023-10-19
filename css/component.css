@@ -13,7 +13,8 @@
     background: #272627;
     border-radius: 10px;
     overflow: hidden;
-    z-index: 100000;
+    position: relative;
+    z-index: 100;
 }
 
 .navigation-component.active {
