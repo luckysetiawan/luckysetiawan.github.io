@@ -10,7 +10,12 @@
     height: 3vw;
     transition: width 0.5s, height 0.5s;
     transition-delay: 0s, 0.75s;
-    background: #272627;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -31,13 +36,23 @@
     height: 3vw;
     display: flex;
     justify-content: flex-end;
-    background: #ff7324;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: 0.5s;
     cursor: pointer;
 }
 
 .navigation-component .toggle-component.active {
-    background: #c3b5fa;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .navigation-component .toggle-component::before {
@@ -93,7 +108,12 @@
 
 /* Change background color, icon color, and title color on hover */
 .navigation-component .ul-component li:hover {
-    background-color: #c3b5fa;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .navigation-component .ul-component li:hover .a-component .icon-component .fa,
