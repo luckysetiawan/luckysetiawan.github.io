@@ -1,4 +1,19 @@
-// Set settings for particles.js
+// Initialize reveal.js
+Reveal.initialize({
+  hash: true,
+  jumpToSlide: false,
+  history: true,
+  overview: false,
+  mouseWheel: true,
+  help: false,
+  scrollActivationWidth: null,
+  
+  plugins: [ RevealMenu ],
+
+  menu: {markers: false}
+});
+
+// Initialize particle.js
 particlesJS('particles-js',
   
   {

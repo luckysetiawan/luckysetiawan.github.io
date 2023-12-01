@@ -10,25 +10,22 @@
 		<title>Lucky's Website</title>
 
 		<!-- 3rd Party CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="css/reveal-js/reset.css">
-		<link rel="stylesheet" href="css/reveal-js/reveal.css">
-		<link rel="stylesheet" href="css/reveal-js/theme/lucky.css">
+		<link rel="stylesheet" href="lib/reveal.js/reset.css">
+		<link rel="stylesheet" href="lib/reveal.js/reveal.css">
+		<link rel="stylesheet" href="lib/reveal.js/theme/lucky.css" id="theme">
 		<!-- Internal CSS -->
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/component.css">
-		<link rel="stylesheet" href="css/text-animate.css">
 
 		<!-- Internal JS -->
 		<script src="js/component.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
-			<navigation-component></navigation-component>
 			<div id="particles-js"></div>
 			<div class="slides">
 				<!-- 1st slide -->
 				<section>
+					<span class="menu-title" style="display: none;">Home</span>
 					<h1><span class="rainbow_text_animated">Lucky Setiawan</span></h1>
 					<hr>
 					<h4 style="color: #b2b2b2">Software Developer</h4>
@@ -38,45 +35,54 @@
 				<!-- 2nd slide -->
 				<section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>Hi! Welcome to my website!</p>
 					</section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Introduction</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>Hi! Welcome to my website!</p>
 						<p>My name is Lucky Setiawan, <br> my friends usually call me "Lucky".</p>
 					</section>
 
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Education</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>I'm an Informatics Engineering graduate with a concentration in software engineering from Institut Teknologi Harapan Bangsa in Indonesia.</p>
 					</section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Education (2)</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>I'm an Informatics Engineering graduate with a concentration in software engineering from Institut Teknologi Harapan Bangsa in Indonesia.</p>
 						<p>I graduated with cum laude honors with a GPA of 3.86.</p>
 					</section>
 
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Interest</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>I picked Informatics Engineering major as I'm amazed and interested in computer technology.</p>
 					</section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Interest (2)</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>I picked Informatics Engineering major as I'm amazed and interested in computer technology.</p>
 						<p>I'm interested in a career in information technology, specifically in the areas of software development.</p>
 					</section>
 
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Experience</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>During my college years, I have accumulated experience in software development, mainly web development.</p>
 					</section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Experience (2)</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>During my college years, I have accumulated experience in software development, mainly web development.</p>
 						<p>Although my experience is mostly in back end development, I'm eager to improve my skills in front end development.</p>
 					</section>
 					<section data-auto-animate>
+						<span class="menu-title" style="display: none;">About Me - Experience (3)</span>
 						<h1><span class="rainbow_text_animated">About Me</span></h1>
 						<p>During my college years, I have accumulated experience in software development, mainly web development.</p>
 						<p>Although my experience is mostly in back end development, I'm eager to improve my skills in front end development.</p>
@@ -87,18 +93,21 @@
 
 				<!-- 3rd slide -->
 				<section>
+					<span class="menu-title" style="display: none;">Portofolios</span>
 					<h1><span class="rainbow_text_animated">Portofolios</span></h1>
 					TBA
 				</section>
 
 				<!-- 4th slide -->
 				<section>
+					<span class="menu-title" style="display: none;">Tools</span>
 					<h1><span class="rainbow_text_animated">Tools</span></h1>
 					TBA
 				</section>
 
 				<!-- 5th slide -->
 				<section>
+					<span class="menu-title" style="display: none;">Contact</span>
 					<h1><span class="rainbow_text_animated">Contact</span></h1>
 					
 					<contact-component></contact-component>
@@ -107,30 +116,10 @@
 		</div>
 
 		<!-- 3rd Party JS -->
-		<script src="js/particles-js/particles.min.js"></script>
-		<script src="js/reveal-js/reveal.js"></script>
+		<script src="lib/particles.js/particles.min.js"></script>
+		<script src="lib/reveal.js/reveal.js"></script>
+		<script src="plugin/menu/menu.js"></script>
 		<!-- Internal JS -->
 		<script src="js/app.js"></script>
-		<script>
-			Reveal.initialize({
-				hash: true,
-				jumpToSlide: false,
-				history: true,
-				overview: false,
-				mouseWheel: true,
-				help: false,
-				scrollActivationWidth: null,
-				
-				plugins: []
-			});
-
-			const navigationComponent = document.querySelector('.navigation-component');
-			const toggleComponent = document.querySelector('.toggle-component');
-
-			toggleComponent.onclick = function() {
-				toggleComponent.classList.toggle('active');
-				navigationComponent.classList.toggle('active');
-			};
-		</script>
 	</body>
 </html>
