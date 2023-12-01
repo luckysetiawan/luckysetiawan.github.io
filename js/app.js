@@ -1,3 +1,4 @@
+// Set settings for particles.js
 particlesJS('particles-js',
   
   {
