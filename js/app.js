@@ -10,7 +10,7 @@ Reveal.initialize({
   
   plugins: [ RevealMenu ],
 
-  menu: {markers: false}
+  menu: { markers: false }
 });
 
 // Initialize particle.js
