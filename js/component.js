@@ -12,7 +12,7 @@ class ContactComponent extends HTMLElement {
 
         if (isMobile()) {
             contact = `
-                <table>
+                <table style="border-collapse: collapse; border: none;">
                     <tr>
                         <td><a target="_blank" style="font-size:30vw;" href="https://www.linkedin.com/in/luckysetiawan/"><i class="fa-brands fa-linkedin"></i></a></td>
                         <td><a target="_blank" style="font-size:30vw;" href="mailto:luckysetiawan0802@gmail.com"><i class="fa-brands fa-google"></i></a></td>
