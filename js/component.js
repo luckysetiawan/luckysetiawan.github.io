@@ -23,7 +23,7 @@ class ContactComponent extends HTMLElement {
                     </tr>
                     <tr>
                         <td><a target="_blank" style="font-size:30vw;" href="https://www.youtube.com/@lucky_setiawan"><i class="fa-brands fa-youtube"></i></a></td>
-                        <td><a target="_blank" style="font-size:30vw;" href="https://www.instagram.com/luckysetia77/"><i class="fa-brands fa-instagram"></i></a></td>
+                        <td><a target="_blank" style="font-size:30vw;" href="https://www.instagram.com/luckysetiaw/"><i class="fa-brands fa-instagram"></i></a></td>
                     </tr>
                 </table>
             `;
@@ -34,7 +34,7 @@ class ContactComponent extends HTMLElement {
                 <a target="_blank" style="font-size:5vw;" href="https://github.com/luckysetiawan"><i class="fa-brands fa-github"></i></a>
                 <a target="_blank" style="font-size:5vw;" href="https://gitlab.com/luckysetiawan"><i class="fa-brands fa-gitlab"></i></a>
                 <a target="_blank" style="font-size:5vw;" href="https://www.youtube.com/@lucky_setiawan"><i class="fa-brands fa-youtube"></i></a>
-                <a target="_blank" style="font-size:5vw;" href="https://www.instagram.com/luckysetia77/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" style="font-size:5vw;" href="https://www.instagram.com/luckysetiaw/"><i class="fa-brands fa-instagram"></i></a>
             `;
         }
 
